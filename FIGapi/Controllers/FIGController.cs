@@ -156,6 +156,7 @@ namespace FIGapi.Controllers
                 {
                     return await _context.Players.Where(p => p.LastName == value).Include(t => t.Team).ThenInclude(p => p.Players).ToListAsync();
                 }
+                return BadRequest("Invalid Query String");
             }
             return await _context.Players.Include(t => t.Team).ThenInclude(p => p.Players).ToListAsync();
         }

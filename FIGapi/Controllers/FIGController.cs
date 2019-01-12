@@ -4,11 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using FIGapi.Models;
-using System.Web;
-using System.Data.Entity;
 using System;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace FIGapi.Controllers
 {
